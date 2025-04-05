@@ -9,6 +9,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/product/:id" element={<ProductDetail/>}></Route>
+        <Route path="*" element={<div className='h-screen flex justify-center items-center'><p>Not Found</p></div>} />
       </Routes>
     </Router>
   )
